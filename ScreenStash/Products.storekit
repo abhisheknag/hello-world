@@ -1,0 +1,58 @@
+{
+  "identifier": "ScreenStash Products",
+  "type": "storekit",
+  "version": 3,
+  "products": [
+    {
+      "displayPrice": "11.99",
+      "familyShareable": false,
+      "internalID": "com.screenstash.pro.annual",
+      "localizations": [
+        {
+          "description": "Unlimited screenshots, search, categories, and more",
+          "displayName": "ScreenStash Pro Annual",
+          "locale": "en_US"
+        }
+      ],
+      "productID": "com.screenstash.pro.annual",
+      "recurringSubscriptionPeriod": "P1Y",
+      "referenceName": "Pro Annual",
+      "subscriptionGroupID": "screenstash_pro",
+      "type": "RecurringSubscription",
+      "subscriptionIntroductoryOffer": {
+        "internalID": "annual_trial",
+        "paymentMode": "free",
+        "subscriptionPeriod": "P3D"
+      }
+    },
+    {
+      "displayPrice": "29.99",
+      "familyShareable": false,
+      "internalID": "com.screenstash.pro.lifetime",
+      "localizations": [
+        {
+          "description": "One-time purchase for lifetime Pro access",
+          "displayName": "ScreenStash Pro Lifetime",
+          "locale": "en_US"
+        }
+      ],
+      "productID": "com.screenstash.pro.lifetime",
+      "referenceName": "Pro Lifetime",
+      "type": "NonConsumable"
+    }
+  ],
+  "subscriptionGroups": [
+    {
+      "id": "screenstash_pro",
+      "localizations": [
+        {
+          "description": "ScreenStash Pro",
+          "displayName": "ScreenStash Pro",
+          "locale": "en_US"
+        }
+      ],
+      "name": "ScreenStash Pro",
+      "subscriptions": ["com.screenstash.pro.annual"]
+    }
+  ]
+}
